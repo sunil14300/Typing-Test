@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e0eefa; /* Light blue background */
+}
+
+.container {
+  background-color: #fff; /* White container */
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333; /* Dark blue text */
+}
+
+.input-field {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+input[type="email"],
+input[type="password"] {
+    font-size: 25px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+button {
+    margin-top: 35px;
+    font-size: 30px;
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #2196f3; /* Blue button */
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #177eff; /* Darker blue on hover */
+}
+
+/* Advanced CSS for a subtle gradient border on focus */
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border: 1px solid #2196f3; /* Blue border on focus */
+  box-shadow: 0 0 5px rgba(33, 150, 243, 0.5); /* Subtle blue shadow */
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="#" style="width: 400px; height: 400px;">
+      <h1>Login</h1>
+      <div class="input-field">
+        <label for="email" style="font-size: 35px;">Email</label>
+        <input type="email" id="email" name="email" required placeholder="abc@gmail.com">
+      </div>
+      <div class="input-field">
+        <label for="password"  style="font-size: 35px;">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Password">
+      </div>
+      <button type="submit">Sign In</button>
+    </form>
+  </div>
+</body>
+</html>
